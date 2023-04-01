@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+//HEADER STYLING//
+
+header {
+    height: 100vh;
+    background-image: url(../images/desktop/imageHeader.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+h1 {
+    color: $secondaryColor;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2.5rem 0;
+    letter-spacing: 0.5rem;
+}
+
+.heroTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+@use "./variables" as *;
+
+//NAVIGATION STYLING//
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 3rem;
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    a {
+        color: $secondaryColor;
+        padding: 0 1rem;
+    }
+    button {
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        font-weight: 550;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        margin-left: 1rem;
+    }
+    .fa-solid {
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+//FOOTER STYLING//
+
+footer {
+    background-color: rgb(139,211,197);
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    ul {
+        display: flex;
+    }
+    .nav {
+        padding: 2rem 0;
+        font-weight: 425;
+    }
+    a {
+        color: $quaternaryColor;
+        padding: 1rem;
+    }
+    .footerSocial {
+        padding-top: 2rem;
+        li {
+            padding: 0 0.5rem;
+            .fa-brands {
+                color:hsl(167, 40%, 24%);
+            }
+        }
+    }
+    p {
+        background-color: $quaternaryColor;
+        text-align: center;
+        font-size: 0.75rem;
+        color: $secondaryColor;
+        padding: 0.5rem 0;
+        a {
+            color: white;
+            padding: 0;
+        }
+    }
+}

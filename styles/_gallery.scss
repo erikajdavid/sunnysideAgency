@@ -1,0 +1,79 @@
+@use "./variables" as *;
+
+//GALLERY STYLING//
+
+.gallery {
+    h2 {
+    font-size: 2rem;
+    margin: 0;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        width: 50%; 
+        height: 65vh; 
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .galleryContainer {
+        max-width: 540px;
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; 
+        padding: 6rem 4rem;
+    }
+    button {
+        border: none;
+        text-transform: uppercase;
+        font-family: $secondaryFont;
+        color: $primaryFont;
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        align-self: flex-start;
+        background-color: transparent;
+        box-shadow: inset 0 -8px 4px hsl(51, 100%, 49%, 0.3);
+    }
+    .box4 button {
+        box-shadow: inset 0 -8px 1px hsl(7, 99%, 70%, 0.3);
+    }
+}
+
+.box1 .galleryContainer,
+.box4 .galleryContainer {
+    justify-content: space-between;
+}
+
+.box5 {
+    color: hsl(167, 40%, 24%);
+}
+
+.box5,
+.box6 {
+    position: relative;
+    text-align: center;
+    h2 {
+        padding-bottom: 1.5rem;
+    }
+    .galleryContainer {
+        position: absolute;
+        z-index: 2;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        padding: 0rem 5.5rem;
+        h2 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
