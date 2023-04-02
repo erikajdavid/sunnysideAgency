@@ -1,0 +1,16 @@
+@media (max-width: 940px) {
+
+     .gallery .galleryContainer {
+        padding: 5rem 2rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery li {
+        width: 100%;
+    }
+}
