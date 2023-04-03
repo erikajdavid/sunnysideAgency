@@ -289,6 +289,8 @@ nav button {
 }
 nav .fa-solid {
   display: none;
+  font-size: 2rem;
+  color: white;
 }
 
 header {
@@ -499,11 +501,30 @@ footer p a {
   }
 }
 @media (max-width: 768px) {
+  header nav {
+    padding: 0 1.5rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  nav .fa-solid {
+    display: block;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
   .gallery li {
     width: 100%;
   }
   .box2 {
     order: -1;
+  }
+  .gallery .galleryContainer {
+    text-align: center;
+  }
+  .gallery button {
+    align-self: center;
   }
   .testimonials {
     padding: 3rem 2rem;
@@ -528,5 +549,12 @@ footer p a {
   }
   .miniGallery ul li {
     width: 50%;
+  }
+  footer .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer li {
+    padding: 0.5rem;
   }
 }
