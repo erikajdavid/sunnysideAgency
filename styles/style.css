@@ -502,4 +502,31 @@ footer p a {
   .gallery li {
     width: 100%;
   }
+  .box2 {
+    order: -1;
+  }
+  .testimonials {
+    padding: 3rem 2rem;
+  }
+  .testimonials .wrapper {
+    flex-direction: column;
+  }
+  .testimonials .wrapper li {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .testimonials .statement {
+    padding: 2rem 2rem;
+  }
+  .testimonials h2 {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .miniGallery ul {
+    flex-wrap: wrap;
+  }
+  .miniGallery ul li {
+    width: 50%;
+  }
 }
